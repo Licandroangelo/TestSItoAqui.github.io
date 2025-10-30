@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome Azienda | Benvenuti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Nome Azienda</div>
+      <ul class="nav-links">
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Benvenuti nel nostro sito</h1>
+      <p>Offriamo soluzioni professionali e su misura per i nostri clienti.</p>
+      <a href="#contatti" class="btn">Contattaci</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="chi-siamo" class="section">
+      <h2>Chi siamo</h2>
+      <p>
+        Siamo un team di professionisti con anni di esperienza nel settore.  
+        La nostra missione è offrire ai clienti servizi di alta qualità e costruire relazioni durature basate sulla fiducia.
+      </p>
+    </section>
+
+    <section id="servizi" class="section alt">
+      <h2>I nostri servizi</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Consulenza</h3>
+          <p>Analisi personalizzata per trovare la soluzione più adatta alla tua azienda.</p>
+        </div>
+        <div class="card">
+          <h3>Progettazione</h3>
+          <p>Creazione di strategie e piani su misura per ogni esigenza.</p>
+        </div>
+        <div class="card">
+          <h3>Assistenza</h3>
+          <p>Supporto continuo prima, durante e dopo ogni progetto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti" class="section">
+      <h2>Contatti</h2>
+      <p>📍 Via Esempio 123, Roma</p>
+      <p>📞 +39 333 123 4567</p>
+      <p>✉️ info@nomeazienda.it</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nome Azienda — Tutti i diritti riservati.</p>
+  </footer>
+
+  <script>
+    // Aggiorna automaticamente l’anno nel footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
